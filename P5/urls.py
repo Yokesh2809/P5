@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 import yogi
+from yogi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('primary suffix',include("appname.urls"))
     path('yogi/',include("yogi.urls")),
+    path('yokesh/',views.yokesh,name="sample")
 ]

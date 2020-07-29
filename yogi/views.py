@@ -15,3 +15,6 @@ def fact(request,n):
 
 def child(request):
     return render(request,"child.html")
+
+def yokesh(request):
+    return render(request,"yogi/yokesh.html")

@@ -3,3 +3,17 @@
 {% block title %}
   <title>Child HTML File</title>
 {% endblock %}
+
+<!--
+  {% block body_block %}
+<body>
+    <h1>Welcome to child.html</h1>
+</body>
+{% endblock %}
+-->
+
+{% block content %}
+  <h1>Welcome to content</h1>
+  <a href="{% url 'yogi:home' %}">home</a>
+  <a href="{% url 'sample' %}">sample</a>
+{% endblock %}
